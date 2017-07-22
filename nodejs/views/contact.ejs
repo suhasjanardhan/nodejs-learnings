@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{background: blue;font-family: arial;color: #ffff;padding: 40px;}
+h1{font-size: 30px;text-align:center;}
+p{font-size:20px; text-align:center;}
+</style>
+</head>
+<body>
+<% include partials/nav.ejs %>
+<h1>Welcome</h1>
+
+<p>This is contact page</p>
+
+
+
+<form id="contact-form" method="POST" action="/contact">
+<label for="who">please enter the dept name</label>
+<input type="text" name="who" value="<%= me.dept %>">
+<label for="stid">Please enter the student id</label>
+<input type="text" name="stid" value="<%= me.studentId %>">
+<label for="mail">Please enter your mail id</label>
+<input type="email" name="mail">
+
+<input type="submit" value="submit">
+
+</form>
+
+</body>
+</html>

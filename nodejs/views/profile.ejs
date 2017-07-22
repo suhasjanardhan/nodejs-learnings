@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{background: blue;font-family: arial;color: #ffff;padding: 40px;}
+h1{font-size: 30px;text-align:center;}
+p{font-size:20px; text-align:center;}
+</style>
+</head>
+<body>
+<% include partials/nav.ejs %>
+<h1>Welcome to <%= student %> profile.</h1>
+<p>AGE: <%= data.age%></p>
+<p>STUDENTID: <%= data.studentId%></p>
+<p>SKILLS</p>
+<ul>
+<% data.skills.forEach(function(item){ %>
+<li><%= item%></li>
+<%});%>
+</ul>
+</body>
+</html>

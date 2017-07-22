@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{background: blue;font-family: arial;color: #ffff;padding: 40px;}
+h1{font-size: 30px;text-align:center;}
+p{font-size:20px; text-align:center;}
+</style>
+</head>
+<body>
+<% include partials/nav.ejs %>
+<h1>Contacts!</h1>
+
+<p>Submission successful!</p>
+
+
+<p>Mail has been sent to <%= data.who %> </p>
+<p> with the student id <%= data.stid %> </p>
+<p> with the mail id <%= data.mail %> </p>
+<p>Thank you</p>
+
+
+</body>
+</html>
+
